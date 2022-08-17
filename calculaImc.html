@@ -11,32 +11,29 @@
 
     function calculaImc(altura, peso) {
 
-<<<<<<< HEAD
         return peso / (altura * altura);
-}
+    }
 
-var nome = prompt("Informe o seu nome: ");
-var alturaInformada = prompt(nome + ", informe sua altura:");
-var pesoInformado = prompt(nome + ", informe seu peso:");
+    var nome = prompt("Informe o seu nome: ");
+    var alturaInformada = prompt(nome + ", informe sua altura:");
+    var pesoInformado = prompt(nome + ", informe seu peso:");
 
-var imc = calculaImc(alturaInformada, pesoInformado);
+    var imc = calculaImc(alturaInformada, pesoInformado);
 
-mostra(nome + ", o seu IMC é " + imc);
+    mostra(nome + ", o seu IMC é " + imc);
 
-if(imc < 18.5){
-    mostra("IMC abaixo do padrão")
-}
-if(imc > 35 ){
-    mostra("IMC acima do padrão")
-}else{
-    mostra("IMC saudável")
-}
-=======
+    if (imc < 18.5) {
+        mostra("IMC abaixo do padrão")
+    }
+    if (imc > 35) {
+        mostra("IMC acima do padrão")
+    } else {
+        mostra("IMC saudável")
+
         var imc = peso / (altura * altura);
         return imc
-    }
->>>>>>> 756ce63200124e0d66240a7505e1e20f83439200
 
+    }
     var imcCalculado = calculaImc(1.77, 75);
     mostra("O meu IMC é : " + imcCalculado);
 </script>

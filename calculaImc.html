@@ -22,6 +22,7 @@
 
     mostra(nome + ", o seu IMC é " + imc);
 
+
     if (imc < 18.5) {
         mostra("IMC abaixo do padrão")
     }
@@ -29,6 +30,16 @@
         mostra("IMC acima do padrão")
     } else {
         mostra("IMC saudável")
+
+if(imc < 18.5){
+    mostra("IMC abaixo do padrão")
+}
+if(imc > 35 ){
+    mostra("IMC acima do padrão da OMS")
+}else{
+    mostra("IMC saudável")
+}
+
 
         var imc = peso / (altura * altura);
         return imc

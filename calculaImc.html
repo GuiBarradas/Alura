@@ -1,21 +1,17 @@
 <meta charset="UTF-8">
-
 <script>
-
     function pulaLinha() {
-
         document.write("<br>");
-        document.write("<br>");
-}
+    }
 
     function mostra(frase) {
-
         document.write(frase);
         pulaLinha();
-}
+    }
 
     function calculaImc(altura, peso) {
 
+<<<<<<< HEAD
         return peso / (altura * altura);
 }
 
@@ -35,5 +31,12 @@ if(imc > 35 ){
 }else{
     mostra("IMC saudável")
 }
+=======
+        var imc = peso / (altura * altura);
+        return imc
+    }
+>>>>>>> 756ce63200124e0d66240a7505e1e20f83439200
 
+    var imcCalculado = calculaImc(1.77, 75);
+    mostra("O meu IMC é : " + imcCalculado);
 </script>
